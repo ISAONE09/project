@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bright Brew Coffee</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showMessage(message) {
+      alert(message);
+    }
+  </script>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <!-- HOME -->
+  <header id="home">
+    <h1>Bright Brew Coffee</h1>
+    <p>"Fuel Your Day, One Cup at a Time"</p>
+    <p>Welcome to our startup coffee shop — serving freshly brewed happiness.</p>
+  </header>
+
+  <!-- ABOUT US -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p><strong>Company Background:</strong> Bright Brew Coffee was founded in 2026 to bring affordable, high‑quality coffee to the community.</p>
+    <p><strong>Mission:</strong> To energize and inspire people through every cup.</p>
+    <p><strong>Vision:</strong> To be the go‑to coffee shop for students and professionals.</p>
+    <p><strong>Why Choose Us?</strong> We use locally sourced beans, eco‑friendly packaging, and prioritize customer satisfaction.</p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <table>
+      <tr><th>Product</th><th>Size</th><th>Price (₱)</th></tr>
+      <tr><td>Espresso</td><td>Small</td><td>80</td></tr>
+      <tr><td>Cappuccino</td><td>Medium</td><td>120</td></tr>
+      <tr><td>Caramel Latte</td><td>Large</td><td>150</td></tr>
+    </table>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact">
+    <h2>Contact / Booking Form</h2>
+    <form onsubmit="showMessage('Thank you! Your booking has been submitted.'); return false;">
+      <label>Customer Name:</label><br>
+      <input type="text" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" required><br><br>
+
+      <label>Service/Product Selection:</label><br>
+      <select>
+        <option>Espresso</option>
+        <option>Cappuccino</option>
+        <option>Caramel Latte</option>
+      </select><br><br>
+
+      <label>Message:</label><br>
+      <textarea required></textarea><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div style="text-align: center; margin-bottom: 20px;">
+    <img src="image.jpeg" alt="Freshly brewed coffee" width="300">
+    <p>"Our customers love the aroma and taste of Bright Brew Coffee!"</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Bright Brew Coffee</p>
+    <div class="footer-links">
+      <a href="#home">Back to Top</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About Us</a>
+    </div>
+  </footer>
+</body>
+</html>
